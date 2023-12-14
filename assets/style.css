@@ -1,0 +1,19 @@
+body{
+    background-color: #faebefff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333d79ff;
+}
+
+.titleName{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
