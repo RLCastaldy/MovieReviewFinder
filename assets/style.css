@@ -59,3 +59,21 @@ body{
     border-radius: 20%;
     font-weight: bold;
 }
+
+span.green{
+    color: lightgreen;
+}
+span.orange{
+    color: rgb(255, 166, 0);
+}
+span.red{
+    color: red;
+}
+
+.over-header{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
