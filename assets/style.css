@@ -9,7 +9,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     padding: 1rem;
-    background-color: #333d79ff;
+    background-color: black;
 }
 
 .titleName{
@@ -39,7 +39,7 @@ body{
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 0.4px 6px 5px rgb(0,0,0,0.1);
-    background-color: #333d79ff;
+    background-color: grey;
     position: relative;
     overflow: hidden;
 }
