@@ -52,18 +52,14 @@ var showMovie = function(data){
          singleM.addEventListener('click', function(){
              model.classList.add('is-active');
              modalTitle.textContent =  movie.title;
-             //the whole detail div
              const details = document.createElement('div');
              details.classList.add('overall');
-             // the header to the "overview" of the movie
              const overviewHeader = document.createElement('h2');
              overviewHeader.classList.add('over-header');
              overviewHeader.innerText = 'Overview:';
-             //the overview paragrph of the movie
              const overview = document.createElement('p');
              overview.classList.add('overviewP');
              overview.innerText = movie.overview;
-             //release Date
              const DateHeader = document.createElement('h2');
              DateHeader.classList.add('over-header');
              DateHeader.innerText = "Release Date:";
