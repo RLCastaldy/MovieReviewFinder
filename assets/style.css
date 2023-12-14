@@ -17,3 +17,14 @@ body{
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
+
+.search{
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    margin-right: 1rem;
+}
+
