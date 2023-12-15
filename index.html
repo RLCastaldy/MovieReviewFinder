@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <title>MovieReviewFinder</title>
 </head>
-
 <body>
-    <div class = "header style">
-        <h1 class="titleName">Movie Review Finder</h1>
-        <input type="text" placeholder="Search" class="search" id="search"> 
+    <div class="flex justify-between flex-wrap items-center p-4 bg-black">
+        <h1 class="text-white text-3xl">Movie Review Finder</h1>
+        <form class="flex justify-between items-center" id="form">
+            <input type="text" placeholder="Search" class="p-2 rounded-full" id="search">
+        </form>
     </div>
-    <main id="main" class = "main"></main>
+    <main id="main" class="flex flex-wrap justify-center"></main>
     <div class="modal modals">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title"></p>
-      <button class="delete" aria-label="close"></button>
-    </header>
-    <section class="modal-card-body">
-    </section>
-    <footer class="modal-card-foot">
-    </footer>
-</body>
-
-<script src="./assets/script.js"></script>
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <div class="modal-card-head">
+                <p class="modal-card-title"></p>
+                <button class="delete" aria-label="close"></button>
+            </div>
+            <section class="modal-card-body">
+        </section>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
