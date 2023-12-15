@@ -2,6 +2,12 @@ const apiKey = 'api_key=0284347479778309f6a7ae5d50f6e356';
 const Url = 'https://api.themoviedb.org/3'
 const frontPage = Url + '/discover/movie?sort_by=popularity.desc&' + apiKey;
 const imgUrl = 'https://image.tmdb.org/t/p/w500/';
+const searchUrl = Url + '/search/movie?' + apiKey;
+const reviewUrl = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=";
+const ReviewAPI = "&api-key=WDilG1tpWW3qKKxUPTbTdQFastfp54SN";
+const main = document.getElementById('main');
+const form = document.getElementById("form");
+const search = document.getElementById("search");
 
 getMovie(frontPage);
 function getMovie(url){
@@ -95,3 +101,16 @@ var showMovie = function(data){
                 return 'red'
             }
             }
+
+            form.addEventListener("submit", function(event){
+                event.preventDefault();
+                const searchTerm = search.value;
+                console.log(searchTerm);
+                if(searchTerm){
+                    getMovie(searchUrl + '&query=' + searchTerm);
+                }
+                else{
+                    getMovie(frontPage);
+                }
+                search.value = '';
+                })
