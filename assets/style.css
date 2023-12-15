@@ -1,15 +1,16 @@
+
 .movie{
     width: 250px;
     margin: 1rem;
     border-radius: 5px;
-    box-shadow: 0.4px 6px 5px rgb(0,0,0,0.1);
+    /* box-shadow: 0.4px 6px 5px rgb(0,0,0,0.1); */
     background-color: grey;
     position: relative;
     overflow: hidden;
 }
 
 .movie-info{
-    color: rgb(206, 206, 206);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +27,6 @@
 
 .over-header{
     font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: bold;
     margin-bottom: 0.5rem;

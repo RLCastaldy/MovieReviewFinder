@@ -9,6 +9,7 @@ const main = document.getElementById('main');
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
+//gathers information for movie displays//
 getMovie(frontPage);
 function getMovie(url){
 fetch(url)
@@ -21,13 +22,14 @@ fetch(url)
 });
 }
 
+//displays movies on front page//
 var showMovie = function(data){
     main.innerHTML = '';
     data.forEach(function(movie){
         const singleMovie = document.createElement('a');
         singleMovie.classList.add('single');
-        const moiveEl = document.createElement('div');
-        moiveEl.classList.add('movie');
+        const movieEl = document.createElement('div');
+        movieEl.classList.add('movie');
         const imgEl = document.createElement('img');
         imgEl.classList.add("movie-img");
         imgEl.src = imgUrl+movie.poster_path;
@@ -41,14 +43,15 @@ var showMovie = function(data){
         rating.innerText = movie.vote_average;
         movieInfo.appendChild(movietitle);
         movieInfo.appendChild(rating);
-        moiveEl.appendChild(imgEl);
-        moiveEl.appendChild(movieInfo);
-        singleMovie.appendChild(moiveEl);
+        movieEl.appendChild(imgEl);
+        movieEl.appendChild(movieInfo);
+        singleMovie.appendChild(movieEl);
         main.appendChild(singleMovie);
         modal(singleMovie, movie);
     })
     }
 
+    //adds functionality to cards//
     var modal = function(singleM,movie){
         const model = document.querySelector('.modals');
         const modalBackground = document.querySelector('.modal-background');
@@ -60,12 +63,18 @@ var showMovie = function(data){
              modalTitle.textContent =  movie.title;
              const details = document.createElement('div');
              details.classList.add('overall');
+
+             //adds card header//
              const overviewHeader = document.createElement('h2');
              overviewHeader.classList.add('over-header');
              overviewHeader.innerText = 'Overview:';
+             
+             //adds synopsis to card//
              const overview = document.createElement('p');
              overview.classList.add('overviewP');
              overview.innerText = movie.overview;
+             
+             //adds release date to card//
              const DateHeader = document.createElement('h2');
              DateHeader.classList.add('over-header');
              DateHeader.innerText = "Release Date:";
@@ -78,11 +87,15 @@ var showMovie = function(data){
              details.appendChild(releaseDate);
              modalBody.appendChild(details);
          })
+
+         //opens card//
             modalBackground.addEventListener('click', function(){
              model.classList.remove('is-active');
              const details = document.querySelector('.overall');
              details.remove();
          })
+
+         //closes card//
             closeBtn.addEventListener('click', function(){
              model.classList.remove('is-active');
              const details = document.querySelector('.overall');
@@ -90,8 +103,10 @@ var showMovie = function(data){
          })
         }
 
+        //gets ratings//
         var getRating= function(){}
 
+            //adds submit event and functionality to search bar//
             form.addEventListener("submit", function(event){
                 event.preventDefault();
                 const searchTerm = search.value;

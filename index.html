@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,25 +10,28 @@
     <link rel="stylesheet" href="./assets/style.css">
     <title>MovieReviewFinder</title>
 </head>
+
 <body>
+    <!-- Header, title and search bar -->
     <div class="flex justify-between flex-wrap items-center p-4 bg-black">
         <h1 class="text-white text-3xl">Movie Review Finder</h1>
         <form class="flex justify-between items-center" id="form">
             <input type="text" placeholder="Search" class="p-2 rounded-full" id="search">
         </form>
     </div>
+
+    <!-- Card styling -->
     <main id="main" class="flex flex-wrap justify-center"></main>
-    <div class="modal modals">
-        <div class="modal-background"></div>
-        <div class="modal-card">
-            <div class="modal-card-head">
-                <p class="modal-card-title"></p>
-                <button class="delete" aria-label="close"></button>
-            </div>
-            <section class="modal-card-body">
-        </section>
+        <div class="modal modals">
+            <div class="modal-background"></div>
+                <div class="modal-card">
+                    <div class="modal-card-head">
+                        <p class="modal-card-title"></p>
+                        <button class="delete" aria-label="close"></button>
+                    </div>
+                    <section class="modal-card-body"></section>
+                </div>
         </div>
-    </div>
     <script src="./assets/script.js"></script>
 </body>
 </html>
