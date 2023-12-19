@@ -110,7 +110,7 @@ var showMovie = function(data){
             form.addEventListener("submit", function(event){
                 event.preventDefault();
                 const searchTerm = search.value;
-                //saves to locan storage//
+                //saves to local storage//
                 let searchHistory = JSON.parse(localStorage.getItem('movie')) || []
                 searchHistory.push(searchTerm);
                 localStorage.setItem('movie', JSON.stringify(searchHistory))
