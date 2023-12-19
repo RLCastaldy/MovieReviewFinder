@@ -22,4 +22,4 @@ THEN I am presented with a lits of movies and reviews for each.
 
 https://rlcastaldy.github.io/MovieReviewFinder/
 
-![rlcastaldy github io_MovieReviewFinder_](https://github.com/RLCastaldy/MovieReviewFinder/assets/140565239/2228dbc0-14f1-4216-a863-a6bc89c76a9f)
+![rlcastaldy github io_MovieReviewFinder_index html](https://github.com/RLCastaldy/MovieReviewFinder/assets/140565239/4dbe8272-ea1b-4996-a92f-8fdc125875f8)
